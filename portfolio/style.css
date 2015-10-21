@@ -1,0 +1,648 @@
+=@charset "UTF-8";
+/* CSS Document */
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+/* FONTS
+****************************************************************************************************************************************/
+
+@font-face {
+	font-family: 'norwesterregular';
+	src: url('http://dannypmyers.com/wp-content/plugins/wp-font-face/fonts/norwester-webfont.eot');
+	src: url('http://dannypmyers.com/wp-content/plugins/wp-font-face/fonts/norwester-webfont.eot?#iefix') format('embedded-opentype'),
+		url('http://dannypmyers.com/wp-content/plugins/wp-font-face/fonts/norwester-webfont.woff2') format('woff2'),
+		url('http://dannypmyers.com/wp-content/plugins/wp-font-face/fonts/norwester-webfont.woff') format('woff'),
+		url('http://dannypmyers.com/wp-content/plugins/wp-font-face/fonts/norwester-webfont.ttf') format('truetype'),
+		url('http://dannypmyers.com/wp-content/plugins/wp-font-face/fonts/norwester-webfont.svg#norwesterregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	}
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+	/*background-color: #B2B2B2;*/
+	font-size: 12px;
+	margin: 0 0 100px;
+	
+}
+
+.container_site {
+	width: 1200px;
+	/*min-height: 100%;*/
+	background-color: #FFF;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.container_header {
+	width: 1100px;
+	height: 250px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
+    padding-left: 50px;
+	float: left;
+}
+
+/* NAV BAR
+****************************************************************************************************************************************/
+
+.container_nav {
+	 width: 750px;
+    height: 100px;
+    font-family: "din-condensed-web",sans-serif;
+    padding-top: 50px;
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: right;
+	letter-spacing: .1em;
+}
+	
+	
+nav ul {
+	list-style: none;
+	/*padding-right: 30px;*/
+}
+
+nav ul li {
+	padding: 10px;
+	display: inline-block;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #B2B2B2;
+	font-size: 200%;
+	padding: 10px;
+}
+
+nav ul li a:hover {
+	color: #000;
+}
+
+.current_page_item a{
+	color: #0070ff;
+}
+
+
+/* CONTENT
+****************************************************************************************************************************************/
+
+h1 {
+	font-size: 32px;
+	font-family: "din-condensed-web", sans serif;
+	padding-bottom: 10px;
+}
+
+p {
+	font-family: "proxima-nova",sans-serif;
+	font-size: 120%;
+    line-height: 20px;
+	padding-right: 87px;
+	}
+
+.container_content {
+	width: 1200px;
+	height: 850px;
+	background-color: #22EC38;
+	margin: 50px auto;
+}
+
+
+
+
+/* PORTFOLIO PAGE
+****************************************************************************************************************************************/
+
+.page #portfolio {
+	
+	
+}
+
+.page #portfolio img {
+width: 300px;
+height: 250px;
+position: relative;
+display: inline-block;
+}
+
+
+
+
+
+
+/* HR
+****************************************************************************************************************************************/
+
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+.blog_hr {
+	border: 0;
+    height: 0;
+	width: 150px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #0070ff;
+	margin-bottom: 5px;
+}
+
+
+
+/* PAGES
+****************************************************************************************************************************************/
+
+
+.page {
+	
+	
+}
+
+.page #home {
+	
+}	
+
+.page #about {
+	
+}
+
+.page #work {
+	
+}
+
+.page #blog {
+	
+}
+
+.page #contact {
+	
+}
+
+
+/* FOOTER
+****************************************************************************************************************************************/
+
+
+
+.footer {
+	position: relative;
+	bottom: 0;
+	width:1200px;
+	height: 100px;
+	margin: 50px 0 0 auto;
+	
+}
+
+.footer p {
+	padding-top: 50px;
+	text-align: center;
+	font-family: "proxima-nova",sans-serif;
+}
+
+
+
+
+
+
+	/*SOCIAL MEDIA ICONS*/
+	.footer ul.footermedia {
+		text-decoration: none;
+		margin: 0 auto;
+		}
+		
+	
+	.footer > ul.footermedia > a:nth-child(1) > img {
+		opacity: 0.4;
+    	filter: alpha(opacity=40); /* For IE8 and earlier */
+		width: 87px;
+		height: 65px;
+		padding-left: 50px;
+		padding-top: 25px;
+		}
+	
+	.footer > ul.footermedia > a:nth-child(2) > img {
+		opacity: 0.4;
+    	filter: alpha(opacity=40); /* For IE8 and earlier */
+		width: 40px;
+		height: 40px;
+		padding-left: 5px;
+		}
+	
+	.footer > ul.footermedia > a:nth-child(3) > img {
+		opacity: 0.4;
+    	filter: alpha(opacity=40); /* For IE8 and earlier */
+		width: 40px;
+		height: 40px;
+		padding-left: 5px;
+		}
+
+	.footer > ul.footermedia > a:nth-child(4) > img {
+		opacity: 0.4;
+    	filter: alpha(opacity=40); /* For IE8 and earlier */
+		width: 40px;
+		height: 40px;
+		padding-left: 5px;
+		}
+	
+	.footer > ul.footermedia > a:nth-child(1) > img:hover {
+		opacity: 100;
+		}
+	
+	.footer > ul.footermedia > a:nth-child(2) > img:hover {
+		opacity: 100;
+		}
+		
+	.footer > ul.footermedia > a:nth-child(3) > img:hover {
+		opacity: 100;
+		}	
+	
+	.footer > ul.footermedia > a:nth-child(4) > img:hover {
+		opacity: 100;
+		}	
+
+
+
+
+
+
+/* BLOG PAGE
+****************************************************************************************************************************************/
+
+.blog_wrap {
+	width: 750px;
+	/*background-color: #5B99F3;*/
+	margin: 50px auto;
+  	overflow: hidden;
+	display: block;   
+}
+ .blog_wrap p {
+	 font-family: "proxima-nova",sans-serif;
+	font-size: 120%;
+    line-height: 20px;
+	
+	 
+}
+
+.post_date {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 30px;
+	padding-top: 20px;
+}
+
+
+.entry-title {
+	font-size: 24px;
+	text-decoration: none;
+	font-color: #000;
+	line-height: 30px;
+	
+}
+
+.blog-post {
+	font-size: 10px;
+}
+
+
+ .post-body img {
+max-width: 100%;
+max-height: auto;
+display: block;
+margin: auto; 
+}
+
+
+
+
+.about_wrap {
+   width: 1200px;
+	/*background-color: #22EC38;*/
+	margin: 50px auto;
+   	overflow: hidden;
+	display: block;   
+}
+.box {
+   float: left;
+   position: relative;
+   width: 400px;
+   height: 400px;
+}
+
+.port1 {
+   position: relative;
+   left: 0px;
+   right: 10px;
+   top: 0px;
+   bottom: 10px;
+   overflow: hidden;
+}
+.port {
+   position: absolute;
+   overflow: hidden;
+}
+
+
+
+
+
+.port1 img {
+   width: 400px;
+   height: 400px;
+   opacity: 0.3;
+}
+
+.port1 img:hover {
+	opacity: 1;
+	
+}
+
+.port img {
+   width: 400px;
+   height: 400px;
+	opacity: 0.3;
+}
+
+.port img:hover {
+	opacity: 1;
+}
+
+
+
+
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box port1 {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 25%;
+      padding-bottom: 25%;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT PAGE
+****************************************************************************************************************************************/
+
+*{
+  	outline:none;
+  	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+	font-size: 100%;
+}
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th,figcaption{ 
+	font-weight: normal; 
+	font-style: normal; 
+}
+a{
+	text-decoration:none; 
+	outline:none;
+}
+i{
+	font-style:normal;
+	color:#000;	
+}
+label {
+  	margin-top: 25px;
+  	color:#000;
+  	font-size:12px;
+	font-family: "proxima-nova",sans-serif;
+}
+/* Contact form */
+#tihidContainer{
+	max-width: 800px;
+	width:90%;
+  	/*background: #2c3134;*/
+  	padding: 25px;
+  	margin: 30px auto;
+	/* Code to rotate the form just the way it looks in the article picture */
+	/*
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);	
+	-ms-transform:rotate(-20deg);
+	-o-transform:rotate(-20deg);
+	transform: rotate(-20deg);*/
+}
+.formHeader{
+	witdh:100%;
+	margin-bottom:30px;
+}
+.formHeader h1{
+	font-size:32px;
+	color:#000;
+	padding:0;
+	margin:0;	
+}
+.inpuWrap{
+  	margin:16px 0;
+  	display:block
+}
+input, textarea{
+	width: 100%;
+	padding: 10px;
+	font-size: 19.2px;
+	background:transparent;
+	border:none;
+	border-bottom:1px solid #000;
+	color:#000;
+	font-family: "proxima-nova",sans-serif;
+	}
+/* Adding a yellow border to the input fields when focused */
+input:focus, textarea:focus{
+	border-bottom:1px solid #0070ff;	
+}
+textarea {
+  	height: 150px;
+  	padding: 10px;
+}
+.color{
+	border:1px solid #F00 !important	
+}
+/* Submit Button */
+button{
+	margin:25px auto 0px auto;
+	display:block;
+	width: 100px;
+	height:100px;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+	background: transparent;
+	border:1px solid #ffffff;
+	text-transform:uppercase;
+	font-size: 12px;
+	font-style:normal;
+	color:#000;
+	cursor:pointer;
+}
+button i{
+	font-size:22px;
+}
+button:hover, button:focus {
+  	border:1px solid #0070ff;
+}
+.error{
+	width:100%;
+	display:block;
+	margin-top:5px;
+	color:#000;
+	padding:10px;
+	background:#f25454;
+}
+
+
+
+
+.alignnone {
+	padding-top: 15px;
+	}
+
+body > div.container_site > div.blog_wrap > div:nth-child(10) > p:nth-child(4) > a > img {
+	padding-top: 10px;
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+		.portfolio_wrap {
+		padding-top: 50px;
+		height: 100%;
+		width: 1210px;
+		margin: 0 auto;
+		background-color: #E71418;
+		}
+
+	.portfolio_wrap img {
+		display: inline-block;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: #CECBCB;
+		}
+
+	.content_single {
+		padding-top: 50px;
+		margin: 0 auto;
+		background-color: #E90D10;
+		width: 875px;
+		height: 100px;
+		align: center;
+		position:relative;
+		}
+	
+	.port_thumb {
+		display: inline-block;
+		width: 400px;
+		height: 400px;
+		align: center;
+		display: inline-block;
+		 }
+
+
+
+
+/* SINGLE POST
+****************************************************************************************************************************************/
+
+
+.image_left {
+	padding-left: 50px;
+	float: left;
+}
+
+.right {
+	float: right;
+	width: 480px;
+	
+}
+
+
+.single_wrap {
+   width: 1200px;
+	/*background-color: #22EC38;*/
+	margin: 50px auto;
+   	overflow: hidden;
+	display: block;   
+}
